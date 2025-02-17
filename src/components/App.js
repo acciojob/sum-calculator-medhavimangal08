@@ -5,7 +5,7 @@ const App = () => {
   let [num, setNum] = useState(0);
   let [sum, calcSum] = useState(0);
   useEffect(() => {
-    calcSum(sum + num);
+    calcSum(sum + +num);
   }, [num]);
   return (
     <div>
